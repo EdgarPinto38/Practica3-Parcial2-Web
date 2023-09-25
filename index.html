@@ -4,47 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="main.css" />
   </head>
-  <body class="bg-dark">
+  <body class="bg-black">
     <header>
       <nav
         class="navbar navbar-expand-lg bg-body-tertiary"
         style="position: fixed; width: 100%; top: -10px"
       >
-        <div class="container-fluid bg-success">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <div class="container-fluid bg-black">
+          <img src="img/miniSkull.png" alt="" style="width: 75px;">
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav text-light">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#inicio"
+                  >INICIO</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#yo"
+                  >ACERCA DE MÍ</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#educacion"
+                  >EDUCACIÓN</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#experiencia"
+                  >EXPERIENCIA</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#proyectos"
+                  >PROYECTOS</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <div class="container-lg text-light">
+    <div
+      class="container-lg d-flex justify-content-center"
+      style="margin-top: 100px"
+    >
       <section class="row">
         <article class="col-lg-4">
           <img
@@ -54,15 +78,29 @@
             class="w-100"
           />
         </article>
-        <article class="col-lg-8">
-          <h1>Edgar Adrian Pinto Aquino</h1>
-          <h4>
-            ESTUDIANTE DE ING. EN DESARROLLO DE SOFTWARE <br />
-            INTERACTIVO Y VIDEOJUEGOS
-          </h4>
-          <br />
-          <br />
-          <h4>ACERCA DE MÍ</h4>
+        <article class="col-lg-8 text-danger text-center" id="inicio">
+          <h1 style="margin-top: 100px">Edgar Adrian Pinto Aquino</h1>
+          <h3>Desarrollador de software</h3>
+          <p>
+            <a href="https://instagram.com/edgarpinto03?igshid=NGVhN2U2NjQ0Yg=="
+              ><img src="img/instagram.png" alt="" style="height: 100px"
+            /></a>
+
+            <a href="https://skullsociety.itch.io/"
+              ><img src="img/itchio.png" alt="" style="height: 100px"
+            /></a>
+
+            <a href="https://github.com/EdgarPinto38"
+              ><img src="img/github.png" alt="" style="height: 100px"
+            /></a>
+          </p>
+        </article>
+      </section>
+    </div>
+    <div class="container-lg text-light" style="margin-top: 100px">
+      <section class="row">
+        <article class="col-lg-12 text-center" id="yo">
+          <h4 class="text-danger">ACERCA DE MÍ</h4>
           <p>
             Soy estudiante de quinto semestre que gusta de la programación y el
             trabajo en equipo. Me gusta crear experiencias para que las personas
@@ -71,69 +109,212 @@
             persona que siempre da lo mejor de si.
           </p>
           <h5>Hobbies</h5>
-          <ul>
-            <li>
-              Apacionado de las artes marciales, llevo 10 años pacticando
-              distintas disciplinas de combate.
-            </li>
-            <li>
-              Apacionado de la historia, sobre todo de temas relacionados a las
-              guerras mundiales.
-            </li>
-            <li>Jugador ocasional de ajedrez.</li>
-          </ul>
+          <div class="d-flex justify-content-center">
+            <ul>
+              <li>
+                Apacionado de las artes marciales, llevo 10 años pacticando
+                distintas disciplinas de combate.
+              </li>
+              <li>
+                Apacionado de la historia, sobre todo de temas relacionados a las
+                guerras mundiales.
+              </li>
+              <li>Jugador ocasional de ajedrez.</li>
+            </ul>
+          </div>
         </article>
       </section>
     </div>
-    <div class="container-lg text-light">
+    <div class="container-lg" style="margin-top: 100px">
+      <section class="row">
+        <article class="col-lg-12 text-center" id="educacion">
+          <h4 class="text-danger">EDUCACIÓN</h4>
+        </article>
+        <article
+          class="col-lg-6 text-light text-center"
+          style="margin-top: 50px"
+        >
+          <h5>
+            Centro de Bachillerato Tecnológico industrial y de Servicios N° 79
+            “María Soto la Marina”
+          </h5>
+          <p>Técnico en programación, 2021</p>
+          <img src="img/cbtis79.png" alt="" class="w-50" />
+        </article>
+        <article
+          class="col-lg-6 text-light text-center"
+          style="margin-top: 50px"
+        >
+          <h5>Universidad Amerike</h5>
+          <p>Ingeniería en Desarrollo de Software interactivo y videojuegos</p>
+          <img src="img/amerike.png" alt="" class="w-50" />
+        </article>
+      </section>
+    </div>
+    <div class="container-lg" style="margin-top: 150px">
+      <section class="row">
+        <article class="col-lg-12 text-danger text-center" id="experiencia">
+          <h4>EXPERIENCIA</h4>
+        </article>
+      </section>
+    </div>
+    <div class="container-lg" style="margin-top: 100px">
+      <section class="row">
+        <article class="col-lg-4 text-center offset-lg-2 text-light">
+          <h4>Denedig</h4>
+          <p>
+            Formo parte de un equipo de programacion el cual trabaja en el
+            desarrollo de un juego el cual busca dar a conocer a diversos
+            inventores mexicanos mediante un metodo de aprendizaje divertido.
+          </p>
+        </article>
+        <article class="col-lg-4">
+          <img src="img/LOGODENEDIGPNG.png" alt="" class="w-100" />
+        </article>
+      </section>
+    </div>
+    <div class="container-lg" style="margin-top: 50px">
+      <section class="row">
+        <article class="col-lg-12 text-light text-center">
+          <h5>ACTIVIDADES REALIZADAS</h5>
+          <div class="d-flex justify-content-center">
+            <ul style="margin-top: 20px">
+              <li>Programación en C#</li>
+              <li>Programación de gameplay</li>
+              <li>Programación de audios</li>
+              <li>Investigación de inventores</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </div>
+    <div class="container-lg" style="margin-top: 100px">
+      <section class="row">
+        <article
+          class="col-lg-4 text-center offset-lg-2 text-light"
+          style="border: 20px; border-color: white"
+        >
+          <img src="img/ONSIGNA_HOLDINGS_Logo_03.png" alt="" class="w-100" />
+        </article>
+        <article class="col-lg-4 text-light">
+          <h4>Onsigna Holdings SA de CV</h4>
+          <p>
+            Trabaje con un equipo que manejaba la base de datos de una
+            aplicacion movil bancaria.
+          </p>
+        </article>
+      </section>
+    </div>
+    <div class="container-lg" style="margin-top: 50px">
+      <section class="row">
+        <article class="col-lg-12 text-light text-center">
+          <h5>ACTIVIDADES REALIZADAS</h5>
+          <div class="d-flex justify-content-center">
+            <ul style="margin-top: 20px">
+              <li>Programación en Kotlin</li>
+              <li>Manejo de sql</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </div>
+    <div class="container-lg" style="margin-top: 100px">
+      <section class="row">
+        <article class="col-lg-12" id="proyectos">
+          <h4 class="text-center text-danger">PROYECTOS</h4>
+        </article>
+      </section>
+    </div>
+    <div class="container-lg">
       <section class="row">
         <article class="col-lg-12">
-          <h4 class="text-center">Experiencia</h4>
-        </article>
-        <article class="col-lg-6">
-          <div class="card" style="width: 18rem">
-            <img
-              src="img/LOGODENEDIGPNG.png"
-              class="card-img-top w-100"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5>Denedig</h5>
-              <p class="card-text">
-                En esta empresa es donde estoy realizando mis practicas
-                profesionales actualmente.
-                <br />
-                Formo parte de un equipo de programacion el cual trabaja en el
-                desarrollo de un juego el cual busca dar a conocer a diversos
-                inventores mexicanos mediante un metodo divertido.
-              </p>
+          <div>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="img/diceSpace.png"
+                    class="d-block w-50 mx-auto"
+                    alt="..."
+                    style="height: 400px"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/fnat.png"
+                    class="d-block w-50 mx-auto"
+                    alt="..."
+                    style="height: 400px"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/crazy.png"
+                    class="d-block w-100 mx-auto"
+                    alt="..."
+                    style="height: 400px"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleFade"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Actividades realizadas:</li>
-              <li class="list-group-item">Programacion en C#</li>
-              <li class="list-group-item">Programación de gameplay</li>
-              <li class="list-group-item">Programación de audios</li>
-              <li class="list-group-item">Investigacion de inventores</li>
-            </ul>
           </div>
-        </article>
-        <article class="col-lg-6">
-          <div class="card" style="width: 18rem">
-            <img src="img/ONSIGNA_HOLDINGS_Logo_03.png" class="card-img-top bg-black" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Onsigna Holdings SA de CV</h5>
-              <p class="card-text">
-                Trabaje con un equipo que manejaba la base de datos de una aplicacion movil bancaria
-              </p>
+          <div>
+            <h5 class="text-danger text-center">ENLACES</h5>
+            <div class="d-flex justify-content-center">
+              <ul style="margin-top: 50px">
+                <li>
+                  <a href="https://skullsociety.itch.io/five-nights-at-tacubaya"
+                     class="link-warning">Five Nights at Tacubaya</a
+                  >
+                </li>
+                <br />
+                <li>
+                  <a href="https://skullsociety.itch.io/dice-space"
+                  class="link-warning">Dice Space</a
+                  >
+                </li>
+                <br />
+                <li>
+                  <a
+                    href="https://ozcardev.itch.io/crazy-color-magic-train-adventure"
+                    class="link-warning">Crazy Color Magic Train Adventure</a
+                  >
+                </li>
+                <br />
+              </ul>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Actividades realizadas:</li>
-              <li class="list-group-item">Programación en Kotlin</li>
-              <li class="list-group-item">Manejo de sql</li>
-            </ul>
           </div>
         </article>
       </section>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
